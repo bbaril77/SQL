@@ -1,0 +1,26 @@
+--Design a store database
+
+CREATE TABLE music_store (id INTEGER PRIMARY KEY, item TEXT, category TEXT, in_stock INTEGER, cost INTEGER);
+
+INSERT INTO music_store VALUES (1, "Squier Jazzomaster", "Electric Guitar", 4, 279);
+INSERT INTO music_store VALUES (2, "Squier Stratocaster", "Electric Guitar", 2, 199);
+INSERT INTO music_store VALUES (3, "Squier Telecaster", "Electric Guitar", 3, 199);
+INSERT INTO music_store VALUES (4, "Epiphone Explorer", "Electric Guitar", 2, 299);
+INSERT INTO music_store VALUES (5, "Epiphone Les Paul", "Electric Guitar", 1, 279);
+INSERT INTO music_store VALUES (6, "Epiphone SG", "Electric Guitar", 3, 199);
+INSERT INTO music_store VALUES (7, "Fender Jazzomaster", "Electric Guitar", 1, 879);
+INSERT INTO music_store VALUES (8, "Fender Stratocaster", "Electric Guitar", 4, 849);
+INSERT INTO music_store VALUES (9, "Fender Telecaster", "Electric Guitar", 4, 879);
+INSERT INTO music_store VALUES (10, "Gibson Explorer", "Electric Guitar", 1, 1249);
+INSERT INTO music_store VALUES (11, "Gibson Les Paul", "Electric Guitar", 2, 1099);
+INSERT INTO music_store VALUES (12, "Gibson SG", "Electric Guitar", 2, 1049);
+INSERT INTO music_store VALUES (13, "Gibson Explorer", "Electric Guitar", 1, 1999);
+INSERT INTO music_store VALUES (14, "Fender Jazzomaster", "Electric Guitar", 1, 1999);
+INSERT INTO music_store VALUES (15, "Fender Stratocaster", "Electric Guitar", 1, 1999);
+INSERT INTO music_store VALUES (16, "Fender Telecaster", "Electric Guitar", 1, 2149);
+INSERT INTO music_store VALUES (17, "Gibson Les Paul", "Electric Guitar", 1, 2279);
+INSERT INTO music_store VALUES (18, "Gibson Les Paul", "Electric Guitar", 1, 2099);
+
+--Display the database ordered by cost
+SELECT * FROM music_store
+ORDER BY cost asc;
